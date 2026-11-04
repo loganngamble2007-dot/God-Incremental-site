@@ -60,6 +60,7 @@
       <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-gray-300">
         <a href="#about" class="hover:text-brand-pink transition">About</a>
         <a href="#games" class="hover:text-brand-pink transition">Games</a>
+        <a href="#guide" id="guide-nav-link" class="hover:text-brand-pink transition">Guide</a>
         <a href="#codes" class="hover:text-brand-pink transition">Codes</a>
         <a href="#feedback" class="hover:text-brand-pink transition">Feedback</a>
         <a href="#updates" class="hover:text-brand-pink transition">Patch Notes</a>
@@ -97,6 +98,10 @@
     <section id="games" class="py-20 border-b border-white/5 bg-brand-dark/30">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12"><h2 class="font-heading text-3xl md:text-4xl font-extrabold text-white mb-3">Our Games</h2><p class="text-gray-400 max-w-xl mx-auto">Created out of a passion for incremental games! Combining the best mechanics inspired by Resource Incremental, Noob Incremental, and more to create the ultimate incremental experience.</p></div>
+        <div class="glass-card max-w-4xl mx-auto mb-10 p-6 sm:p-8 rounded-2xl border border-brand-pink/30">
+          <h3 class="font-heading text-lg font-bold text-white mb-2"><i class="fa-solid fa-heart text-brand-pink mr-2" aria-hidden="true"></i>A Note from the Developer</h3>
+          <p class="text-sm text-gray-300 leading-relaxed">God Incremental is the first incremental game I’ve ever made. I’ve created simulators, tycoons, and other kinds of games before, but making an incremental is a new experience for me. I know there’s room to improve, so please bear with me while I keep learning and working on the game. You can find helpful information both in-game and in the guide on this website. Thanks for playing and supporting the project!</p>
+        </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <article class="glass-card p-6 sm:p-8 rounded-2xl border-2 border-cyan-300/70 shadow-xl shadow-cyan-950/20 flex flex-col">
             <div class="flex items-center justify-between mb-5"><h3 class="font-heading text-lg font-bold text-white">Current Game</h3><span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-400/30 text-emerald-300 text-xs font-bold uppercase tracking-wider"><span class="w-2 h-2 rounded-full bg-emerald-400"></span>Live</span></div>
@@ -119,6 +124,357 @@
             <div class="mt-auto w-full sm:w-fit inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-white/5 border border-white/10 text-gray-400 font-bold"><i class="fa-solid fa-hourglass-half"></i>Stay tuned</div>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section id="guide" class="hidden min-h-[calc(100vh-5rem)] py-12 sm:py-20 border-b border-white/5 bg-brand-dark/30">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <button id="guide-back-button" type="button" class="mb-8 inline-flex items-center gap-2 text-sm font-semibold text-gray-300 hover:text-brand-pink transition"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i>Back to homepage</button>
+        <div class="text-center mb-10"><h2 class="font-heading text-3xl md:text-4xl font-extrabold text-white mb-3">Game Guide</h2><p class="text-gray-400 max-w-2xl mx-auto">New to God Incremental? Open the guide for a simple overview of progression and the major systems.</p></div>
+        <details open class="glass-card rounded-2xl overflow-hidden group">
+          <summary class="list-none cursor-pointer p-5 sm:p-6 flex items-center justify-between gap-4 text-white font-heading font-bold text-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">
+            <span class="flex items-center gap-3"><i class="fa-solid fa-book-open text-brand-pink"></i>Open the beginner's guide</span>
+            <i class="fa-solid fa-chevron-down text-brand-pink transition-transform group-open:rotate-180" aria-hidden="true"></i>
+          </summary>
+          <div class="border-t border-white/10 p-5 sm:p-8 space-y-4">
+            <details open class="rounded-xl bg-black/20 border border-white/10 overflow-hidden">
+              <summary class="cursor-pointer px-5 py-4 text-white font-heading font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">Tiers &amp; progression</summary>
+              <div class="px-5 pb-5 text-sm text-gray-300 leading-relaxed space-y-3">
+                <p>Build your stats with training and upgrades, then meet the requirements shown in-game to advance through tiers. The current update history lists 100 max tiers, with tiers 51–100 added in Update 6.</p>
+                <p>When progress slows, check your available upgrades, achievements, skill tree, and newly unlocked maps before moving on. Exact tier requirements can change between updates, so use the in-game tier screen for current values.</p>
+              </div>
+            </details>
+            <details class="rounded-xl bg-black/20 border border-white/10 overflow-hidden">
+              <summary class="cursor-pointer px-5 py-4 text-white font-heading font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">God Power, Rebirths &amp; other resets</summary>
+              <div class="px-5 pb-5 text-sm text-gray-300 leading-relaxed space-y-3">
+                <p>Use each reset system when its requirements are met. Rebirths and Sacrifices are part of the progression, while Super Prestige has three progressive tiers and Ascension resets cash for global stat multipliers.</p>
+                <p>God Power and the exact reset costs, rewards, and what each reset removes should be checked in their in-game menus. Read the confirmation screen before resetting so you know what progress will be lost and what permanent bonus you will gain.</p>
+              </div>
+            </details>
+            <details class="rounded-xl bg-black/20 border border-white/10 overflow-hidden">
+              <summary class="cursor-pointer px-5 py-4 text-white font-heading font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">Stats, currencies &amp; upgrades</summary>
+              <div class="px-5 pb-5 text-sm text-gray-300 leading-relaxed space-y-3">
+                <p>Train and upgrade your stats to earn more cash and meet progression requirements. Other systems may add their own resources, including Fantasies, leaves, mining ores, Sugar, and Candy Canes.</p>
+                <p>Check the sidebar, Shop, skill tree, and the menu for each unlocked map to see your current totals, multipliers, and available upgrades. Resource uses and unlock requirements are shown in-game and can change with updates.</p>
+              </div>
+            </details>
+            <details class="rounded-xl bg-black/20 border border-white/10 overflow-hidden">
+              <summary class="cursor-pointer px-5 py-4 text-white font-heading font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">Runes &amp; their boosts</summary>
+              <div class="px-5 pb-5 text-sm text-gray-300 leading-relaxed space-y-3">
+                <p>Runes provide bonuses and are connected to different progression systems. The update history mentions Fantasy Runes, Leaf Runes, six Sugar Runes, and the Pumpkin Rune from the seasonal event.</p>
+                <div class="overflow-x-auto rounded-lg border border-white/10">
+                  <table class="w-full min-w-[32rem] text-left text-sm">
+                    <thead class="bg-white/5 text-gray-200"><tr><th class="px-4 py-3 font-semibold">Rune group</th><th class="px-4 py-3 font-semibold">Known from updates</th><th class="px-4 py-3 font-semibold">Boosts / capacity</th></tr></thead>
+                    <tbody class="divide-y divide-white/10 text-gray-300">
+                      <tr><td class="px-4 py-3">Fantasy</td><td class="px-4 py-3">Fantasy Runes</td><td class="px-4 py-3">Check rune details in-game</td></tr>
+                      <tr><td class="px-4 py-3">Fall event</td><td class="px-4 py-3">Leaf Runes; Pumpkin Rune</td><td class="px-4 py-3">Check rune details in-game</td></tr>
+                      <tr><td class="px-4 py-3">Candy</td><td class="px-4 py-3">Six Sugar Runes</td><td class="px-4 py-3">Check rune details in-game</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="text-xs text-gray-400">Exact rune names, maximum boosts, and equip/storage limits aren’t listed in the current site data. Use the in-game rune menu for the latest values.</p>
+              </div>
+            </details>
+            <details class="rounded-xl bg-black/20 border border-white/10 overflow-hidden">
+              <summary class="cursor-pointer px-5 py-4 text-white font-heading font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">Maps, mining, events &amp; codes</summary>
+              <div class="px-5 pb-5 text-sm text-gray-300 leading-relaxed space-y-3">
+                <p>Unlock maps as you progress. The Cave map includes mining ores and pickaxe upgrades; the Candy map features Sugar Dice, Sugar, Candy Canes, and Sugar Runes. Seasonal maps and events can add limited-time resources and rewards.</p>
+                <p>Redeem active codes at the bottom of the in-game Shop. Check achievements and the skill tree for additional goals and upgrades.</p>
+              </div>
+            </details>
+                      <p class="pt-3 border-t border-white/10 text-xs text-gray-400">Game systems and unlock requirements may change with updates. Follow the in-game instructions for exact requirements.</p>
+        </div>
+      </details>
+
+      <details class="glass-card rounded-2xl overflow-hidden group mt-6">
+        <summary class="list-none cursor-pointer p-5 sm:p-6 flex items-center justify-between gap-4 text-white font-heading font-bold text-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">
+          <span class="flex items-center gap-3"><i class="fa-solid fa-map text-brand-pink"></i>How to Play: Maps 1–5</span>
+          <i class="fa-solid fa-chevron-down text-brand-pink transition-transform group-open:rotate-180" aria-hidden="true"></i>
+        </summary>
+        <div class="border-t border-white/10 p-5 sm:p-8 space-y-4 text-sm text-gray-300 leading-relaxed">
+          <details class="rounded-xl bg-black/20 border border-white/10 overflow-hidden">
+            <summary class="cursor-pointer px-5 py-4 text-white font-heading font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">Map 1 — Main (Hub World)</summary>
+            <ul class="px-5 pb-5 space-y-2 list-disc list-inside">
+              <li>Walk around to auto-collect God Power (GP) orbs as they spawn.</li>
+              <li>Spend GP on the upgrade boards: GP Per Orb, Pickup Range, Walk Speed, Max Orbs, Spawn Speed, and GP Multiplier.</li>
+              <li>Climb the 100-tier rank ladder by spending GP. Tier 1 starts at 8,000 GP.</li>
+              <li>At Tier 3+, use the Rebirth Station to reset GP and upgrades for rebirth points; spend those on Rebirth Upgrades and the Rebirth Tree.</li>
+              <li>Stand on the Rune Station pad to auto-roll Bulk, Luck, and Speed runes for permanent boosts. Use the Rarity Roller for extra multipliers.</li>
+              <li>Later unlocks include the Crown Collector (passive crowns), Sacrifice Station (at 1 trillion GP), Diamond Shop, and God Power Arena.</li>
+            </ul>
+          </details>
+          <details class="rounded-xl bg-black/20 border border-white/10 overflow-hidden">
+            <summary class="cursor-pointer px-5 py-4 text-white font-heading font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">Map 2 — Forest (World 2)</summary>
+            <ul class="px-5 pb-5 space-y-2 list-disc list-inside">
+              <li>Unlock this world through the World 2 Portal once your tier is high enough.</li>
+              <li>Buy Dropper 1 (10 billion crowns) to start earning Fantasies, then buy Dropper 2 and the Upgrader to multiply earnings.</li>
+              <li>Buy Fantasy Upgrades: Fantasy Gain, Drop Speed, Upgrader Power, Crown Boost, and GP Boost.</li>
+              <li>Use the Fantasy Rune Station for map-specific runes.</li>
+              <li>At high Fantasy counts, use Super Prestige to reset stats for permanent multipliers: 1.5x at 1B, 3x at 100B, and 5x at 1T Fantasies. Tiers, runes, diamonds, and rarity are preserved.</li>
+            </ul>
+          </details>
+          <details class="rounded-xl bg-black/20 border border-white/10 overflow-hidden">
+            <summary class="cursor-pointer px-5 py-4 text-white font-heading font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">Map 3 — Cave (World 3)</summary>
+            <ul class="px-5 pb-5 space-y-2 list-disc list-inside">
+              <li>Enter through the World 3 Portal; you automatically receive a Pickaxe tool.</li>
+              <li>Click ores to mine them: Coal (most common, lowest value), Iron, Gold, and Diamond (rarest, most valuable).</li>
+              <li>Sell ores at the Sell Station for Mining Cash.</li>
+              <li>Buy Mining Upgrades: Ore Luck, Backpack Capacity, Ore Yield, Sell Bonus, and Auto Mine.</li>
+              <li>Spend cash and ores in the Cave Perk Tree and on the Pickaxe Evolution Board to upgrade pickaxe power and appearance.</li>
+              <li>Buy Ascension tiers (I through V) for permanent earnings multipliers (up to 15x) with no reset.</li>
+            </ul>
+          </details>
+          <details class="rounded-xl bg-black/20 border border-white/10 overflow-hidden">
+            <summary class="cursor-pointer px-5 py-4 text-white font-heading font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">Map 4 — Fall Event</summary>
+            <ul class="px-5 pb-5 space-y-2 list-disc list-inside">
+              <li>This is the Halloween event map. Collect leaves and progress through Leaf Ranks; the Fall Rune Station requires Leaf Rank 10.</li>
+              <li>Stand on rune station pads to roll event runes. A separate Pumpkin Rune Station uses Pumpkins, with one Pumpkin per roll.</li>
+              <li>Event availability and unlock details may change; check the in-game map and station requirements.</li>
+            </ul>
+          </details>
+          <details class="rounded-xl bg-black/20 border border-white/10 overflow-hidden">
+            <summary class="cursor-pointer px-5 py-4 text-white font-heading font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">Map 5 — Candy (World 4)</summary>
+            <ul class="px-5 pb-5 space-y-2 list-disc list-inside">
+              <li>Unlock at Tier 70 (“Rank LXX: The Everything”).</li>
+              <li>Click the Sugar Dice Board to roll dice. Payouts scale with the pip total, with bonuses for doubles and a jackpot for double sixes.</li>
+              <li>Buy Sugar Upgrades to improve rolls: sugar per pip, six chance, doubles multiplier, jackpot multiplier, surge, and tier bonus.</li>
+              <li>Upgrade to up to 6 dice for bigger rolls.</li>
+              <li>Collect Candy Canes for sugar multipliers, use the Candy Rune Station for runes, and convert between currencies with the Sugar Conversion system.</li>
+            </ul>
+          </details>
+          <div class="rounded-xl bg-brand-pink/5 border border-brand-pink/20 p-5">
+            <h3 class="font-heading font-bold text-white mb-3">General tips for every map</h3>
+            <ul class="space-y-2 list-disc list-inside">
+              <li>Walk near orbs and collectibles to auto-pick them up; pickup-range upgrades make this much easier.</li>
+              <li>Stand on rune station pads in each map to passively roll that map’s runes.</li>
+              <li>Use portals to travel between worlds; they have a short cooldown.</li>
+              <li>The StatsHUD tracks your currencies, and the Tier ProgressBar shows rank progress.</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <details class="glass-card rounded-2xl overflow-hidden group mt-6">
+        <summary class="list-none cursor-pointer p-5 sm:p-6 flex items-center justify-between gap-4 text-white font-heading font-bold text-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">
+          <span class="flex items-center gap-3"><i class="fa-solid fa-leaf text-brand-pink"></i>How to Complete the Halloween Map</span>
+          <i class="fa-solid fa-chevron-down text-brand-pink transition-transform group-open:rotate-180" aria-hidden="true"></i>
+        </summary>
+        <div class="border-t border-white/10 p-5 sm:p-8 space-y-5 text-sm text-gray-300 leading-relaxed">
+          <p class="text-gray-400">Map 4 — Fall Event. This was the 2026 Halloween event, which ended on November 20, 2026. During the event, players could enter through the Fall Event Portal with no tier or level requirement. The map may no longer be available.</p>
+          <div class="rounded-xl bg-black/20 border border-white/10 p-5">
+            <h3 class="font-heading font-bold text-white mb-3">Step 1 — Collect leaves</h3>
+            <p>Leaves fall around the map and are collected automatically when you walk nearby. Start with Maple Leaves (×1 value), then unlock rarer leaf types. The map has 40 leaves at a time, increased to 100 with Gale upgrades, and leaves respawn every 3 seconds.</p>
+          </div>
+          <div class="rounded-xl bg-black/20 border border-white/10 p-5">
+            <h3 class="font-heading font-bold text-white mb-3">Step 2 — Unlock leaf mods</h3>
+            <p class="mb-3">These are one-time purchases with Leaves. Each mod increases the value of collected leaves:</p>
+            <div class="overflow-x-auto rounded-lg border border-white/10"><table class="w-full min-w-[30rem] text-left text-sm"><thead class="bg-white/5 text-gray-200"><tr><th class="px-4 py-3">Leaf mod</th><th class="px-4 py-3">Cost</th><th class="px-4 py-3">Value</th></tr></thead><tbody class="divide-y divide-white/10"><tr><td class="px-4 py-2">Maple Leaf</td><td class="px-4 py-2">Free</td><td class="px-4 py-2">×1</td></tr><tr><td class="px-4 py-2">Golden Leaf</td><td class="px-4 py-2">1,000 Leaves</td><td class="px-4 py-2">×8</td></tr><tr><td class="px-4 py-2">Crimson Leaf</td><td class="px-4 py-2">10,000 Leaves</td><td class="px-4 py-2">×25</td></tr><tr><td class="px-4 py-2">Amber Leaf</td><td class="px-4 py-2">100,000 Leaves</td><td class="px-4 py-2">×80</td></tr><tr><td class="px-4 py-2">Mystic Leaf</td><td class="px-4 py-2">1M Leaves</td><td class="px-4 py-2">×400</td></tr><tr><td class="px-4 py-2">Celestial Leaf</td><td class="px-4 py-2">10M Leaves</td><td class="px-4 py-2">×2,500</td></tr><tr><td class="px-4 py-2">Leaf of the Gods</td><td class="px-4 py-2">100M Leaves</td><td class="px-4 py-2">×25,000</td></tr><tr><td class="px-4 py-2">Divine Leaf</td><td class="px-4 py-2">1B Leaves</td><td class="px-4 py-2">×250,000</td></tr><tr><td class="px-4 py-2">Cosmic Leaf</td><td class="px-4 py-2">10B Leaves</td><td class="px-4 py-2">×2,500,000</td></tr><tr><td class="px-4 py-2">Leaf of Infinity</td><td class="px-4 py-2">100B Leaves</td><td class="px-4 py-2">×25,000,000</td></tr></tbody></table></div>
+          </div>
+          <div class="rounded-xl bg-black/20 border border-white/10 p-5">
+            <h3 class="font-heading font-bold text-white mb-3">Step 3 — Buy leaf upgrades</h3>
+            <div class="overflow-x-auto rounded-lg border border-white/10"><table class="w-full min-w-[34rem] text-left text-sm"><thead class="bg-white/5 text-gray-200"><tr><th class="px-4 py-3">Upgrade</th><th class="px-4 py-3">Max level</th><th class="px-4 py-3">Effect per level</th></tr></thead><tbody class="divide-y divide-white/10"><tr><td class="px-4 py-2">Leaf Value</td><td class="px-4 py-2">25</td><td class="px-4 py-2">+75% leaf value</td></tr><tr><td class="px-4 py-2">Leaf Magnet</td><td class="px-4 py-2">15</td><td class="px-4 py-2">+2 studs pickup range</td></tr><tr><td class="px-4 py-2">Lucky Leaves</td><td class="px-4 py-2">20</td><td class="px-4 py-2">+10% rare leaf chance</td></tr><tr><td class="px-4 py-2">Leaf Gale</td><td class="px-4 py-2">15</td><td class="px-4 py-2">+10% leaves on map</td></tr><tr><td class="px-4 py-2">Leaf Storm</td><td class="px-4 py-2">20</td><td class="px-4 py-2">+50% leaf value (multiplicative)</td></tr><tr><td class="px-4 py-2">Golden Aura</td><td class="px-4 py-2">15</td><td class="px-4 py-2">+5% rare leaf chance</td></tr><tr><td class="px-4 py-2">Leaf Modification Chance</td><td class="px-4 py-2">20</td><td class="px-4 py-2">+5% leaf mod chance</td></tr><tr><td class="px-4 py-2">Leaf Surge</td><td class="px-4 py-2">15</td><td class="px-4 py-2">+100% leaf value (multiplicative)</td></tr><tr><td class="px-4 py-2">Mega Magnet</td><td class="px-4 py-2">10</td><td class="px-4 py-2">+5 studs pickup range</td></tr><tr><td class="px-4 py-2">Autumn Gale</td><td class="px-4 py-2">10</td><td class="px-4 py-2">+15% leaves on map</td></tr><tr><td class="px-4 py-2">Divine Luck</td><td class="px-4 py-2">10</td><td class="px-4 py-2">+15% rare leaf chance</td></tr></tbody></table></div>
+          </div>
+          <div class="rounded-xl bg-black/20 border border-white/10 p-5">
+            <h3 class="font-heading font-bold text-white mb-3">Step 4 — Climb the 15 Leaf Ranks</h3>
+            <p class="mb-3">Ranking up resets Leaves, Leaf Upgrades, and Leaf Mods, but you keep your runes and current rank. Each rank grants ×1.5 leaf value and +5% rare leaf chance, so rank up and quickly rebuild your upgrades and mods.</p>
+            <div class="overflow-x-auto rounded-lg border border-white/10"><table class="w-full min-w-[30rem] text-left text-sm"><thead class="bg-white/5 text-gray-200"><tr><th class="px-4 py-3">Rank</th><th class="px-4 py-3">Title</th><th class="px-4 py-3">Lifetime leaves</th></tr></thead><tbody class="divide-y divide-white/10"><tr><td class="px-4 py-2">1</td><td class="px-4 py-2">Fallen Sprout</td><td class="px-4 py-2">750</td></tr><tr><td class="px-4 py-2">2</td><td class="px-4 py-2">Leaf Raker</td><td class="px-4 py-2">3,750</td></tr><tr><td class="px-4 py-2">3</td><td class="px-4 py-2">Breezy Wanderer</td><td class="px-4 py-2">15,000</td></tr><tr><td class="px-4 py-2">4</td><td class="px-4 py-2">Maple Adept</td><td class="px-4 py-2">75,000</td></tr><tr><td class="px-4 py-2">5</td><td class="px-4 py-2">Harvest Hand</td><td class="px-4 py-2">375,000</td></tr><tr><td class="px-4 py-2">6</td><td class="px-4 py-2">Autumn Lord</td><td class="px-4 py-2">1.5M</td></tr><tr><td class="px-4 py-2">7</td><td class="px-4 py-2">Foliage King</td><td class="px-4 py-2">7.5M</td></tr><tr><td class="px-4 py-2">8</td><td class="px-4 py-2">Everfall Emperor</td><td class="px-4 py-2">37.5M</td></tr><tr><td class="px-4 py-2">9</td><td class="px-4 py-2">Season Sovereign</td><td class="px-4 py-2">150M</td></tr><tr><td class="px-4 py-2">10</td><td class="px-4 py-2">Goddess of Fall</td><td class="px-4 py-2">750M</td></tr><tr><td class="px-4 py-2">11</td><td class="px-4 py-2">Fallen Divinity</td><td class="px-4 py-2">3B</td></tr><tr><td class="px-4 py-2">12</td><td class="px-4 py-2">Sovereign of Seasons</td><td class="px-4 py-2">15B</td></tr><tr><td class="px-4 py-2">13</td><td class="px-4 py-2">Eternal Harvest</td><td class="px-4 py-2">75B</td></tr><tr><td class="px-4 py-2">14</td><td class="px-4 py-2">Divine Canopy</td><td class="px-4 py-2">375B</td></tr><tr><td class="px-4 py-2">15</td><td class="px-4 py-2">The Last Leaf</td><td class="px-4 py-2">1.5T</td></tr></tbody></table></div>
+          </div>
+          <div class="rounded-xl bg-black/20 border border-white/10 p-5">
+            <h3 class="font-heading font-bold text-white mb-3">Step 5 — Evil Pumpkin boss (optional)</h3>
+            <p class="mb-3">Stand within 18 studs to automatically attack the Evil Pumpkin. It has 500 HP and respawns in 4 seconds. Deal at least 50 damage (10% of its HP) before it dies to earn Pumpkins; the base reward is 10 per kill.</p>
+            <p class="mb-2">Spend Pumpkins on boss upgrades:</p>
+            <ul class="space-y-1 list-disc list-inside"><li>Pumpkin Damage (max 50): +25% damage per level</li><li>Attack Speed (max 35): +15% attack speed per level</li><li>Respawn Speed (max 20): −10% respawn time per level</li><li>More Pumpkins (max 350): +10% Pumpkins per kill</li></ul>
+            <p class="mt-3">Use 1 Pumpkin per roll at the Pumpkin Rune Station for Gourd, Jack, Hollow, and Reaper runes.</p>
+          </div>
+          <div class="rounded-xl bg-black/20 border border-white/10 p-5">
+            <h3 class="font-heading font-bold text-white mb-3">Step 6 — Fall Rune Station</h3>
+            <p>Unlocks at Leaf Rank 10. Stand on the rune pad to auto-roll for 1,000 Leaves per roll. There are 13 event runes, from Fall Rune to Omega Fall Rune; maxing Omega Fall Rune grants 10× God Power. Tempest and Sovereign Fall Runes boost non-event rune stations by up to ×2.5 and ×3, respectively.</p>
+          </div>
+          <div class="rounded-xl bg-brand-pink/5 border border-brand-pink/20 p-5">
+            <h3 class="font-heading font-bold text-white mb-3">Completion checklist &amp; tips</h3>
+            <ul class="space-y-2 list-disc list-inside"><li>Reach Rank 15, “The Last Leaf” (1.5T lifetime leaves).</li><li>Unlock all 10 leaf mods, through Leaf of Infinity.</li><li>Max key upgrades: Leaf Value, Leaf Surge, Leaf Storm, and Divine Luck.</li><li>Farm the Evil Pumpkin for Pumpkins and Pumpkin Runes.</li><li>Roll event runes after reaching Rank 10.</li><li>Rank up, then quickly rebuy mods and upgrades; this is the core progression loop.</li><li>Prioritize Leaf Value, Leaf Surge, and Leaf Storm to grow your income.</li><li>Leaf Magnet and Mega Magnet speed up collection; higher ranks improve rare leaf chance.</li><li>The 2026 Halloween event ended on November 20, 2026; event access may depend on whether it returns in a future update.</li></ul>
+          </div>
+        </div>
+      </details>
+
+      <details class="glass-card rounded-2xl overflow-hidden group mt-6">
+        <summary class="list-none cursor-pointer p-5 sm:p-6 flex items-center justify-between gap-4 text-white font-heading font-bold text-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">
+          <span class="flex items-center gap-3"><i class="fa-solid fa-wand-sparkles text-brand-pink"></i>Rune List: All Maps</span>
+          <i class="fa-solid fa-chevron-down text-brand-pink transition-transform group-open:rotate-180" aria-hidden="true"></i>
+        </summary>
+        <div class="border-t border-white/10 p-5 sm:p-8 space-y-4 text-sm text-gray-300">
+          <p class="text-gray-400 leading-relaxed">Rune odds, costs, and effects are listed as provided. Tables scroll horizontally on small screens. Check the in-game rune menus for current values.</p>
+          <details class="rounded-xl bg-black/20 border border-white/10 overflow-hidden">
+            <summary class="cursor-pointer px-5 py-4 text-white font-heading font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">Map 1 — Basic Runes (Map1_Main)</summary>
+            <div class="p-5 space-y-3"><p>Roll cost: 10 trillion cash · Max Bulk: 50,000 · Luck exponent cap: 6</p>
+              <div class="overflow-x-auto rounded-lg border border-white/10"><table class="w-full min-w-[46rem] text-left text-xs"><thead class="bg-white/5 text-gray-200"><tr><th class="px-3 py-2">Rune</th><th class="px-3 py-2">Rarity / odds</th><th class="px-3 py-2">Bonus per rune</th><th class="px-3 py-2">Max</th><th class="px-3 py-2">At max</th></tr></thead><tbody class="divide-y divide-white/10">
+                <tr><td class="px-3 py-2">Mortal</td><td class="px-3 py-2">Common, 95%</td><td class="px-3 py-2">+0.0005 GP mult</td><td class="px-3 py-2">100</td><td class="px-3 py-2">2x GP</td></tr>
+                <tr><td class="px-3 py-2">Hermes</td><td class="px-3 py-2">Uncommon, 4%</td><td class="px-3 py-2">+0.001 GP mult</td><td class="px-3 py-2">50</td><td class="px-3 py-2">2.5x GP</td></tr>
+                <tr><td class="px-3 py-2">Ares</td><td class="px-3 py-2">Rare, 0.8%</td><td class="px-3 py-2">+0.002 GP mult</td><td class="px-3 py-2">25</td><td class="px-3 py-2">3x GP</td></tr>
+                <tr><td class="px-3 py-2">Zeus</td><td class="px-3 py-2">Epic, 0.15%</td><td class="px-3 py-2">+0.005 GP mult</td><td class="px-3 py-2">10</td><td class="px-3 py-2">4x GP</td></tr>
+                <tr><td class="px-3 py-2">Genesis</td><td class="px-3 py-2">Legendary, 0.01%</td><td class="px-3 py-2">+0.01 GP mult</td><td class="px-3 py-2">5</td><td class="px-3 py-2">5x GP</td></tr>
+                <tr><td class="px-3 py-2">Poseidon</td><td class="px-3 py-2">Mythic, 1 in 1M; Tier 22 required</td><td class="px-3 py-2">+0.02 GP mult</td><td class="px-3 py-2">500</td><td class="px-3 py-2">20x GP, 2x Max Orbs</td></tr>
+                <tr><td class="px-3 py-2">Hades</td><td class="px-3 py-2">Divine, 1 in 1T</td><td class="px-3 py-2">+0.03 GP mult</td><td class="px-3 py-2">10</td><td class="px-3 py-2">25x GP</td></tr>
+                <tr><td class="px-3 py-2">Chronos</td><td class="px-3 py-2">Celestial, 1 in 10T</td><td class="px-3 py-2">+0.05 GP mult</td><td class="px-3 py-2">5</td><td class="px-3 py-2">50x GP</td></tr>
+                <tr><td class="px-3 py-2">Chaos</td><td class="px-3 py-2">Primordial, 1 in 100T</td><td class="px-3 py-2">+0.10 GP mult</td><td class="px-3 py-2">3</td><td class="px-3 py-2">100x GP</td></tr>
+                <tr><td class="px-3 py-2">Elysium</td><td class="px-3 py-2">Secret, 1 in 100Q; needs “Secret Basic” Cave Perk</td><td class="px-3 py-2">+0.15 GP mult</td><td class="px-3 py-2">2</td><td class="px-3 py-2">250x GP</td></tr>
+              </tbody></table></div>
+            </div>
+          </details>
+          <details class="rounded-xl bg-black/20 border border-white/10 overflow-hidden">
+            <summary class="cursor-pointer px-5 py-4 text-white font-heading font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">Map 2 — Fantasy Runes (Map2_Forest)</summary>
+            <div class="p-5 space-y-3"><p>Roll cost: 10,000 Fantasies · Max Bulk: 50,000</p>
+              <div class="overflow-x-auto rounded-lg border border-white/10"><table class="w-full min-w-[46rem] text-left text-xs"><thead class="bg-white/5 text-gray-200"><tr><th class="px-3 py-2">Rune</th><th class="px-3 py-2">Rarity / odds</th><th class="px-3 py-2">Bonus per rune</th><th class="px-3 py-2">Max</th><th class="px-3 py-2">At max</th></tr></thead><tbody class="divide-y divide-white/10">
+                <tr><td class="px-3 py-2">Pixie</td><td class="px-3 py-2">Common, 90%</td><td class="px-3 py-2">+0.001 GP mult</td><td class="px-3 py-2">100</td><td class="px-3 py-2">2.5x GP</td></tr>
+                <tr><td class="px-3 py-2">Wisp</td><td class="px-3 py-2">Uncommon, 7%</td><td class="px-3 py-2">+0.002 GP mult</td><td class="px-3 py-2">50</td><td class="px-3 py-2">3x GP</td></tr>
+                <tr><td class="px-3 py-2">Druid</td><td class="px-3 py-2">Rare, 2.5%</td><td class="px-3 py-2">+0.004 GP mult</td><td class="px-3 py-2">25</td><td class="px-3 py-2">4x GP</td></tr>
+                <tr><td class="px-3 py-2">Phoenix</td><td class="px-3 py-2">Epic, 0.4%</td><td class="px-3 py-2">+0.008 GP mult</td><td class="px-3 py-2">10</td><td class="px-3 py-2">5x GP</td></tr>
+                <tr><td class="px-3 py-2">Dragon</td><td class="px-3 py-2">Legendary, 0.1%</td><td class="px-3 py-2">+0.02 GP mult</td><td class="px-3 py-2">5</td><td class="px-3 py-2">10x GP</td></tr>
+                <tr><td class="px-3 py-2">Kraken</td><td class="px-3 py-2">Mythic, 1 in 1M</td><td class="px-3 py-2">+0.02 GP mult</td><td class="px-3 py-2">500</td><td class="px-3 py-2">25x GP, 5x Crowns, 5x Fantasies</td></tr>
+                <tr><td class="px-3 py-2">Unicorn</td><td class="px-3 py-2">Divine, 1 in 1T</td><td class="px-3 py-2">+0.03 GP mult</td><td class="px-3 py-2">10</td><td class="px-3 py-2">35x GP, 8x Crowns, 8x Fantasies</td></tr>
+                <tr><td class="px-3 py-2">Hydra</td><td class="px-3 py-2">Celestial, 1 in 10T</td><td class="px-3 py-2">+0.05 GP mult</td><td class="px-3 py-2">5</td><td class="px-3 py-2">70x GP, 12x Crowns, 12x Fantasies</td></tr>
+                <tr><td class="px-3 py-2">Leviathan</td><td class="px-3 py-2">Primordial, 1 in 100T</td><td class="px-3 py-2">+0.10 GP mult</td><td class="px-3 py-2">3</td><td class="px-3 py-2">150x GP, 20x Crowns, 20x Fantasies</td></tr>
+                <tr><td class="px-3 py-2">Starborn</td><td class="px-3 py-2">Secret, 1 in 100Q; needs “Secret Fantasy” Cave Perk</td><td class="px-3 py-2">+0.15 GP mult</td><td class="px-3 py-2">2</td><td class="px-3 py-2">300x GP, 30x Crowns, 30x Fantasies</td></tr>
+              </tbody></table></div>
+            </div>
+          </details>
+          <details class="rounded-xl bg-black/20 border border-white/10 overflow-hidden">
+            <summary class="cursor-pointer px-5 py-4 text-white font-heading font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">Map 3 — Cave Runes (Map3_Cave)</summary>
+            <div class="p-5 space-y-3"><p>Roll cost: 2,500 cash · Every rune also adds its bonusPerRune to Rune Luck, Rune Bulk, and ore sell cash.</p>
+              <div class="overflow-x-auto rounded-lg border border-white/10"><table class="w-full min-w-[40rem] text-left text-xs"><thead class="bg-white/5 text-gray-200"><tr><th class="px-3 py-2">Rune</th><th class="px-3 py-2">Rarity / odds</th><th class="px-3 py-2">Effect per rune</th><th class="px-3 py-2">Max</th><th class="px-3 py-2">Bonus per rune</th></tr></thead><tbody class="divide-y divide-white/10">
+                <tr><td class="px-3 py-2">Quartz</td><td class="px-3 py-2">Common, filler</td><td class="px-3 py-2">+0.010 GP mult</td><td class="px-3 py-2">50,000</td><td class="px-3 py-2">+0.0001</td></tr>
+                <tr><td class="px-3 py-2">Amethyst</td><td class="px-3 py-2">Rare, ~1 in 66.7M</td><td class="px-3 py-2">+0.020 Rebirth mult</td><td class="px-3 py-2">25,000</td><td class="px-3 py-2">+0.0002</td></tr>
+                <tr><td class="px-3 py-2">Onyx</td><td class="px-3 py-2">Epic, ~1 in 200M</td><td class="px-3 py-2">+0.030 Sacrifice mult</td><td class="px-3 py-2">12,500</td><td class="px-3 py-2">+0.0004</td></tr>
+                <tr><td class="px-3 py-2">Emerald</td><td class="px-3 py-2">Legendary, ~1 in 555M</td><td class="px-3 py-2">+0.040 Crown mult</td><td class="px-3 py-2">6,000</td><td class="px-3 py-2">+0.0008</td></tr>
+                <tr><td class="px-3 py-2">Sapphire</td><td class="px-3 py-2">Mythic, ~1 in 1.67B</td><td class="px-3 py-2">+0.050 Fantasy mult</td><td class="px-3 py-2">3,000</td><td class="px-3 py-2">+0.0016</td></tr>
+                <tr><td class="px-3 py-2">Heartstone</td><td class="px-3 py-2">Primordial, ~1 in 4B</td><td class="px-3 py-2">+0.050 ALL stats</td><td class="px-3 py-2">1,500</td><td class="px-3 py-2">+0.0032</td></tr>
+              </tbody></table></div><p class="text-xs text-gray-400">All 6 maxed = 6x multiplier to Luck, Bulk, and ore sell cash.</p>
+            </div>
+          </details>
+          <details class="rounded-xl bg-black/20 border border-white/10 overflow-hidden">
+            <summary class="cursor-pointer px-5 py-4 text-white font-heading font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">Map 4 — Fall Event Runes (Map4_FallEvent)</summary>
+            <div class="p-5 space-y-3"><p>Halloween event map · Roll cost: 1,000 leaves · Requires Leaf Rank 10 · Base: 5 Luck, 5 Bulk, 5 Speed</p>
+              <div class="overflow-x-auto rounded-lg border border-white/10"><table class="w-full min-w-[42rem] text-left text-xs"><thead class="bg-white/5 text-gray-200"><tr><th class="px-3 py-2">Rune</th><th class="px-3 py-2">Rarity / odds</th><th class="px-3 py-2">Boosts</th><th class="px-3 py-2">Max</th><th class="px-3 py-2">At max / noted effect</th></tr></thead><tbody class="divide-y divide-white/10">
+                <tr><td class="px-3 py-2">Fall Rune</td><td class="px-3 py-2">Common, 60%</td><td class="px-3 py-2">Leaf mult, Bulk, Speed</td><td class="px-3 py-2">50,000</td><td class="px-3 py-2">+200K Bulk, +50K Speed, +1000x Leaf</td></tr>
+                <tr><td class="px-3 py-2">Harvest Rune</td><td class="px-3 py-2">Uncommon, 37.5%</td><td class="px-3 py-2">Leaf mult, Bulk, Speed</td><td class="px-3 py-2">250,000</td><td class="px-3 py-2">1.5x God Power</td></tr>
+                <tr><td class="px-3 py-2">Equinox Rune</td><td class="px-3 py-2">Rare, 15%</td><td class="px-3 py-2">Leaf mult, Clone</td><td class="px-3 py-2">1M</td><td class="px-3 py-2">+12% Clone, 1.2x Leaf</td></tr>
+                <tr><td class="px-3 py-2">Eternal Fall Rune</td><td class="px-3 py-2">Legendary, 10.5%</td><td class="px-3 py-2">Leaf, Bulk, Speed, Clone</td><td class="px-3 py-2">5M</td><td class="px-3 py-2">2x God Power</td></tr>
+                <tr><td class="px-3 py-2">Aurora Rune</td><td class="px-3 py-2">Epic, 3.6%</td><td class="px-3 py-2">Leaf, Bulk, Speed, Clone</td><td class="px-3 py-2">25M</td><td class="px-3 py-2">2.5x God Power</td></tr>
+                <tr><td class="px-3 py-2">Primordial Fall Rune</td><td class="px-3 py-2">Mythic, 0.9%</td><td class="px-3 py-2">Leaf, Bulk, Speed, Clone</td><td class="px-3 py-2">100M</td><td class="px-3 py-2">3x God Power</td></tr>
+                <tr><td class="px-3 py-2">Tempest Fall Rune</td><td class="px-3 py-2">Exalted, 0.03%</td><td class="px-3 py-2">Non-event Bulk &amp; Speed</td><td class="px-3 py-2">50M</td><td class="px-3 py-2">2.5x Rune Bulk &amp; Speed</td></tr>
+                <tr><td class="px-3 py-2">Sovereign Fall Rune</td><td class="px-3 py-2">Supreme, 0.015%</td><td class="px-3 py-2">Non-event Bulk &amp; Speed</td><td class="px-3 py-2">250M</td><td class="px-3 py-2">3x Rune Bulk &amp; Speed</td></tr>
+                <tr><td class="px-3 py-2">Verdant Fall Rune</td><td class="px-3 py-2">Celestial, 0.3%</td><td class="px-3 py-2">Leaf, Bulk, Speed, Clone</td><td class="px-3 py-2">500M</td><td class="px-3 py-2">4x God Power</td></tr>
+                <tr><td class="px-3 py-2">Eclipse Fall Rune</td><td class="px-3 py-2">Cosmic, 0.09%</td><td class="px-3 py-2">Leaf, Bulk, Speed, Clone</td><td class="px-3 py-2">2.5B</td><td class="px-3 py-2">5x God Power</td></tr>
+                <tr><td class="px-3 py-2">Nebula Fall Rune</td><td class="px-3 py-2">Galactic, 0.03%</td><td class="px-3 py-2">Leaf, Bulk, Speed, Clone</td><td class="px-3 py-2">12.5B</td><td class="px-3 py-2">6x God Power</td></tr>
+                <tr><td class="px-3 py-2">Cosmic Fall Rune</td><td class="px-3 py-2">Universal, 0.00729%</td><td class="px-3 py-2">Leaf, Bulk, Speed, Clone</td><td class="px-3 py-2">62.5B</td><td class="px-3 py-2">8x God Power</td></tr>
+                <tr><td class="px-3 py-2">Omega Fall Rune</td><td class="px-3 py-2">Transcendent, 0.00243%</td><td class="px-3 py-2">Leaf, Bulk, Speed, Clone</td><td class="px-3 py-2">312.5B</td><td class="px-3 py-2">10x God Power</td></tr>
+              </tbody></table></div>
+              <h3 class="font-heading font-bold text-white pt-2">Pumpkin Runes — 1 Pumpkin per roll</h3>
+              <div class="overflow-x-auto rounded-lg border border-white/10"><table class="w-full min-w-[34rem] text-left text-xs"><thead class="bg-white/5 text-gray-200"><tr><th class="px-3 py-2">Rune</th><th class="px-3 py-2">Rarity / odds</th><th class="px-3 py-2">Boosts</th><th class="px-3 py-2">Max</th></tr></thead><tbody class="divide-y divide-white/10">
+                <tr><td class="px-3 py-2">Gourd</td><td class="px-3 py-2">Rare, 50%</td><td class="px-3 py-2">Pumpkin mult, Bulk, Speed</td><td class="px-3 py-2">250,000</td></tr>
+                <tr><td class="px-3 py-2">Jack</td><td class="px-3 py-2">Epic, 10%</td><td class="px-3 py-2">Pumpkin mult, Bulk, Clone</td><td class="px-3 py-2">2.5M</td></tr>
+                <tr><td class="px-3 py-2">Hollow</td><td class="px-3 py-2">Legendary, 1.2%</td><td class="px-3 py-2">Pumpkin mult, Bulk, Speed</td><td class="px-3 py-2">25M</td></tr>
+                <tr><td class="px-3 py-2">Reaper</td><td class="px-3 py-2">Mythic, 0.07%</td><td class="px-3 py-2">Pumpkin mult, Bulk, Speed, Clone</td><td class="px-3 py-2">250M</td></tr>
+              </tbody></table></div>
+            </div>
+          </details>
+          <details class="rounded-xl bg-black/20 border border-white/10 overflow-hidden">
+            <summary class="cursor-pointer px-5 py-4 text-white font-heading font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">Map 5 — Candy Runes (Map5_Candy)</summary>
+            <div class="p-5 space-y-3"><p>Roll cost: 5,000 sugar · Every rune also adds its bonusPerRune to Sugar gain and Candy Cane gain. The hardest odds in the game (~1M× harder than Cave runes).</p>
+              <div class="overflow-x-auto rounded-lg border border-white/10"><table class="w-full min-w-[40rem] text-left text-xs"><thead class="bg-white/5 text-gray-200"><tr><th class="px-3 py-2">Rune</th><th class="px-3 py-2">Rarity</th><th class="px-3 py-2">Effect per rune</th><th class="px-3 py-2">Max</th><th class="px-3 py-2">Bonus per rune</th></tr></thead><tbody class="divide-y divide-white/10">
+                <tr><td class="px-3 py-2">Gumdrop</td><td class="px-3 py-2">Common, filler</td><td class="px-3 py-2">+0.010 GP mult</td><td class="px-3 py-2">50,000</td><td class="px-3 py-2">+0.0002</td></tr>
+                <tr><td class="px-3 py-2">Lollipop</td><td class="px-3 py-2">Rare</td><td class="px-3 py-2">+0.020 Rebirth mult</td><td class="px-3 py-2">25,000</td><td class="px-3 py-2">+0.0004</td></tr>
+                <tr><td class="px-3 py-2">Peppermint</td><td class="px-3 py-2">Epic</td><td class="px-3 py-2">+0.030 Sacrifice mult</td><td class="px-3 py-2">12,500</td><td class="px-3 py-2">+0.0008</td></tr>
+                <tr><td class="px-3 py-2">Chocolate</td><td class="px-3 py-2">Legendary</td><td class="px-3 py-2">+0.040 Crown mult</td><td class="px-3 py-2">6,000</td><td class="px-3 py-2">+0.0016</td></tr>
+                <tr><td class="px-3 py-2">Cotton Candy</td><td class="px-3 py-2">Mythic</td><td class="px-3 py-2">+0.050 Fantasy mult</td><td class="px-3 py-2">3,000</td><td class="px-3 py-2">+0.0032</td></tr>
+                <tr><td class="px-3 py-2">Rainbow Swirl</td><td class="px-3 py-2">Primordial</td><td class="px-3 py-2">+0.050 ALL stats</td><td class="px-3 py-2">1,500</td><td class="px-3 py-2">+0.0064</td></tr>
+              </tbody></table></div>
+            </div>
+          </details>
+        </div>
+      </details>
+
+      <details class="glass-card rounded-2xl overflow-hidden group mt-6">
+        <summary class="list-none cursor-pointer p-5 sm:p-6 flex items-center justify-between gap-4 text-white font-heading font-bold text-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">
+          <span class="flex items-center gap-3"><i class="fa-solid fa-clock text-brand-pink"></i>Estimated Time to Complete Each System</span>
+          <i class="fa-solid fa-chevron-down text-brand-pink transition-transform group-open:rotate-180" aria-hidden="true"></i>
+        </summary>
+        <div class="border-t border-white/10 p-5 sm:p-8 space-y-6 text-sm text-gray-300 leading-relaxed">
+          <p class="rounded-xl bg-brand-pink/5 border border-brand-pink/20 p-4 text-gray-300"><strong class="text-white">Note:</strong> These are estimates for an active player who buys upgrades as they go. Actual times vary considerably depending on multipliers, rebirths, and runes.</p>
+
+          <details class="rounded-xl bg-black/20 border border-white/10 overflow-hidden">
+            <summary class="cursor-pointer px-5 py-4 text-white font-heading font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">Map 1 — Main</summary>
+            <ul class="px-5 pb-5 space-y-2 list-disc list-inside">
+              <li>Tier 1 (8K GP): ~10–20 minutes. Base income is ~2 GP/sec; GP Per Orb and GP Multiplier upgrades speed this up quickly.</li>
+              <li>Tier 3 (Rebirth unlock): ~30–60 minutes; Tier 5: ~1–2 hours.</li>
+              <li>Tier 10 (15Qa GP): a few hours with rebirths boosting you.</li>
+              <li>Tier 22 (Poseidon rune unlock): several hours of rebirth cycles.</li>
+              <li>Tier 70 (Candy map unlock): days of play, with rebirths, sacrifices, and runes stacking.</li>
+              <li>Tier 100 (3.3e133 GP): weeks of stacked multipliers. Tier bonuses multiply orb value up to 4.5e49, so income grows with you.</li>
+              <li>Max all 6 upgrade boards: a few hours early on. Costs are linear, but Spawn Speed and Max Orbs unlock later.</li>
+              <li>Max Rebirth Upgrades (all 10 levels): depends on rebirth income; final levels cost 2,000+ rebirth points each.</li>
+              <li>Max Rebirth Tree pads: mixed. Early pads cost 250K–25M GP (hours); rune pads cost 1e18–1e20 GP and 1B rebirths (very late game).</li>
+              <li>Max Mystery Upgrades (5 levels each, 50–800 points): several rebirth cycles.</li>
+              <li>Sacrifice Station: unlocks at 1 trillion rebirths; deep endgame content.</li>
+            </ul>
+          </details>
+
+          <details class="rounded-xl bg-black/20 border border-white/10 overflow-hidden">
+            <summary class="cursor-pointer px-5 py-4 text-white font-heading font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">Map 2 — Forest</summary>
+            <ul class="px-5 pb-5 space-y-2 list-disc list-inside">
+              <li>Dropper 1 (10B Crowns): depends on Crown Collector level. Base income is ~2 crowns/sec (10 per 5 sec); expect hours of crown farming after Crown Ranks (2x per rank) and Crown upgrades.</li>
+              <li>Dropper 2 + Upgrader (500 Fantasies each): ~30–60 minutes after Dropper 1.</li>
+              <li>Max Fantasy Upgrades: a few hours of dropper income.</li>
+              <li>Super Prestige I (1B Fantasies): days of dropper income with upgrades; II (100B): significantly longer; III (1T): weeks and the map’s endgame.</li>
+            </ul>
+          </details>
+
+          <details class="rounded-xl bg-black/20 border border-white/10 overflow-hidden">
+            <summary class="cursor-pointer px-5 py-4 text-white font-heading font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">Map 3 — Cave</summary>
+            <ul class="px-5 pb-5 space-y-2 list-disc list-inside">
+              <li>First ores to first pickaxe evolution (Iron Pickaxe, 2.5K cash): ~15–30 minutes. Coal takes 2 clicks at base damage and gives 8 cash.</li>
+              <li>All 5 Pickaxe Evolutions (up to Mythic, 20M cash + 30 Diamonds): several hours.</li>
+              <li>Max Mining Upgrades: hours of mining; Auto Mine at 25K cash is the big unlock.</li>
+              <li>Cave Perk Tree maxed: several hours; later perks need Gold and Diamonds.</li>
+              <li>Ascension I (25M cash): ~2–4 hours with upgrades; II (200M): several more hours; III (2B): about a day; IV (20B): days; V (200B): a week or more.</li>
+              <li>Cave Runes maxed: Quartz fills fast. The tuning estimates Amethyst every 2–3 opens, Onyx ~7, Emerald ~20, Sapphire ~60, and Heartstone ~150. Maxing all six takes a few hours on the pad (3-second roll cooldown, down to 0.25 seconds).</li>
+            </ul>
+          </details>
+
+          <details class="rounded-xl bg-black/20 border border-white/10 overflow-hidden">
+            <summary class="cursor-pointer px-5 py-4 text-white font-heading font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">Map 4 — Fall Event (Halloween)</summary>
+            <ul class="px-5 pb-5 space-y-2 list-disc list-inside">
+              <li>Rank 1 (750 lifetime leaves): a few minutes; Rank 5 (375K): ~10–15 minutes with leaf upgrades.</li>
+              <li>Rank 10 (750M, Fall Rune Station unlock): ~30–40 minutes.</li>
+              <li>Rank 15, “The Last Leaf” (1.5T lifetime leaves): ~1 hour, based on the tuning goal for the final rank.</li>
+              <li>Max the 6 main event runes (Fall, Harvest, Equinox, Eternal Fall, Aurora, Primordial Fall): ~45 minutes on the pad, or about an hour including leaf income.</li>
+              <li>Unlock all 10 Leaf Mods through Leaf of Infinity (100B leaves): happens naturally on the way to Rank 15, about an hour total.</li>
+              <li>Evil Pumpkin first kill: seconds (500 HP, 25 damage per 0.8 seconds). Max Pumpkin upgrades depends on kills; 350 levels of More Pumpkins makes it a long passive grind.</li>
+            </ul>
+          </details>
+
+          <details class="rounded-xl bg-black/20 border border-white/10 overflow-hidden">
+            <summary class="cursor-pointer px-5 py-4 text-white font-heading font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink">Map 5 — Candy</summary>
+            <ul class="px-5 pb-5 space-y-2 list-disc list-inside">
+              <li>Map unlock: Tier 70; see Map 1 for the days-long progression estimate.</li>
+              <li>First Candy Canes (25K sugar each): ~10–15 minutes of dice rolling (about 70 sugar per roll at base, 1 roll per second).</li>
+              <li>Max Sugar Upgrades: several hours of rolling. Extra Dice starts at 150K sugar and costs 8x more per level.</li>
+              <li>Max Candy Canes / full conversion bonuses: days of rolling and converting.</li>
+            </ul>
+          </details>
+
+          <div class="rounded-xl bg-brand-pink/5 border border-brand-pink/20 p-5">
+            <h3 class="font-heading font-bold text-white mb-3">Overall game completion</h3>
+            <ul class="space-y-2 list-disc list-inside">
+              <li>Fall Event map: ~1–1.5 hours (designed to be the fastest map to complete).</li>
+              <li>Cave map (Ascension V + runes): ~1–2 weeks of casual play.</li>
+              <li>Forest map (Super Prestige III): weeks.</li>
+              <li>Main map Tier 100: weeks to months; the true endgame.</li>
+              <li>Candy map: gated behind Tier 70, so it is late-game content by default.</li>
+            </ul>
+          </div>
+        </div>
+      </details>
       </div>
     </section>
 
@@ -185,6 +541,26 @@
   </footer>
 
   <script>
+    const guideSection = document.getElementById('guide');
+    const guideNavLink = document.getElementById('guide-nav-link');
+    const guideBackButton = document.getElementById('guide-back-button');
+    const siteMain = document.querySelector('main');
+    const siteFooter = document.querySelector('footer');
+
+    function showGuide(show) {
+      for (const section of siteMain.children) {
+        section.classList.toggle('hidden', show ? section !== guideSection : section === guideSection);
+      }
+      siteFooter.classList.toggle('hidden', show);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    guideNavLink.addEventListener('click', (event) => {
+      event.preventDefault();
+      showGuide(true);
+    });
+    guideBackButton.addEventListener('click', () => showGuide(false));
+
     async function updateActivePlayers() {
       const playerCount = document.getElementById('stat-players');
       const placeId = '112939657712168';
@@ -240,5 +616,8 @@
 
     updateActivePlayers();
   </script>
+</body>
+</html>
+
 </body>
 </html>
